@@ -97,8 +97,8 @@ background: url(../img/sprite.png) -347px -315px no-repeat;
 padding-left: 40px;
 }
 .email {
-background: url(../img/sprite.png) -348px -422px no-repeat;
-padding-left: 40px;
+/* background: url(../img/sprite.png) -348px -422px no-repeat; */
+/* padding-left: 40px; */
 }
 /*----------------<FOOTER CONTACT>----------------*/
 
@@ -109,17 +109,30 @@ margin-bottom: 40px;
 }
 
 footer .widget h2{
-  color: #4d565d;
+  color: #FFFFFF;
   text-transform: uppercase;
-  font-size: 14px;
-  font-weight: 800;
-  margin-bottom: 20px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  font-size: 25px;
 }
 
 footer .widget_text div {
-  color: #b1b6b9;
+  color: #FFFFFF;
+  line-height: 1.5;
+  text-align: justify;      
+  font-size: 12px;
+  position: relative;
 }
 
+footer .widget_text div img {
+  /* margin-top:-10px
+   */}
+footer .widget_text div p span {
+display: inline-block;
+font-size: 13px;
+font-weight: 800;
+margin-right: 8px;
+}
 footer .widget_social_icons_item h2 {
 margin: 40px 0 0;
 }
@@ -380,9 +393,9 @@ width: 102%;
   -webkit-box-sizing: border-box;
 }
 .widget_out_stuff2 .item-con-t1 img {
-/*width: 110% !Important;*/
+width: 110% !Important;
 height: auto !important;
-/*margin-left: -5%;*/
+margin-left: -5%;
 filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
 filter: gray;
 -webkit-filter: grayscale(1);
@@ -837,7 +850,7 @@ margin-bottom: 0;
 position: relative;
 float: left;
 width: 100%;
-padding: 30px 0;
+/* padding: 30px 0; */
 }
 .widget_our_clients .pagination {
   position: absolute;
@@ -861,6 +874,7 @@ h2.title {
   background: #dadada;
   border-bottom: solid 1px #fff;
   margin-bottom: 30px;
+  display: none;
 }
 .widget_our_clients .separator div, .personal-details .separator div {
   position: absolute;
@@ -878,6 +892,7 @@ h2.title {
 }
 .widget_our_clients-container img {
 display: block;
+width: 70%;
 }
 .widget_our_clients .grid_12{
   overflow: hidden;
