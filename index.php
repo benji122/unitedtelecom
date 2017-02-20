@@ -1,4 +1,4 @@
-<html class="wf-opensans-n4-inactive wf-inactive js cssanimations csstransforms csstransforms3d csstransitions">
+﻿<html class="wf-opensans-n4-inactive wf-inactive js cssanimations csstransforms csstransforms3d csstransitions">
 
 <?php include './Includes/header.php'; ?>
 
@@ -7,7 +7,7 @@
     <header class="page-header">
 
         <?php include './Includes/menu.php'; ?>
-		
+
         <div class="absolute">
         </div>
     </header>
@@ -362,9 +362,9 @@
         </div>
     </aside>
 
-	<?php include './Includes/footer.php'; ?>
+    <?php include './Includes/footer.php'; ?>
 
-   
+
 </body>
 
 </html>
