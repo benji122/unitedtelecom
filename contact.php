@@ -32,19 +32,39 @@
                 <div>
                     <div class="overlay"></div>
                     <p><iframe style="border: 0;" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10507.263595377055!2d2.34529!3d48.823574!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf08f5abfe73ca7f!2sUnited+Telecom!5e0!3m2!1sfr!2sfr!4v1426770232124" width="100%" height="350" frameborder="0"></iframe></p>
+
+                    <!--Message confirmation ou erreur formulaire-->
+                    <?php if(isset($_GET["retour"]) && $_GET["retour"] == 1){
+                        ?>
+                            <p style="color:green;text-align:center;font-size: 1.3em;">Votre message a bien été envoyé</p>
+                        <?php
+                    } ?>
+                    <?php if(isset($_GET["retour"]) && $_GET["retour"] == 0){
+                        ?>
+                            <p style="color:red;text-align:center;font-size: 1.3em;">Suite à un probléme, votre message n'a pas pu etre envoyé.</p>
+                        <?php
+                    } ?>
+                    <?php if(isset($_GET["retour-rappel"]) && $_GET["retour-rappel"] == 1){
+                        ?>
+                            <p style="color:green;text-align:center;font-size: 1.3em;">Votre numéro a bien été transmis, nous vous appelerons dans les plus brefs delais </p>
+                        <?php
+                    } ?>
+                    <?php if(isset($_GET["retour-rappel"]) && $_GET["retour-rappel"] == 0){
+                        ?>
+                            <p style="color:red;text-align:center;font-size: 1.3em;">Suite à un probléme, votre numéro n'a pas pu etre transmis.</p>
+                        <?php
+                    } ?>
+
+                    <!--Formulaire-->
                     <div class="theme-one-half">
                         <h4><span style="color: #b4b4b4;">Plus</span> d’informations ?</h4>
                         <p>
                             Veuillez remplir le formulaire ci-dessous afin de prendre contact avec l’un de nos&nbsp;conseillers et ainsi bénéficier d’un accompagnement personnalisé.<br>
                         </p><div role="form" class="wpcf7" id="wpcf7-f4-p135-o1" lang="fr-FR" dir="ltr">
                             <div class="screen-reader-response"></div>
-                            <form name="" action="/web/20150628025917/http://www.unitedtelecom.fr/contact/#wpcf7-f4-p135-o1" method="post" class="wpcf7-form cf7-style twenty-fifteen-pattern" novalidate="novalidate">
+                            <form name="" action="controller/mail.php" method="post" class="wpcf7-form cf7-style twenty-fifteen-pattern" novalidate="novalidate">
                                 <div style="display: none;">
-                                    <input type="hidden" name="_wpcf7" value="4">
-                                    <input type="hidden" name="_wpcf7_version" value="4.1.2">
-                                    <input type="hidden" name="_wpcf7_locale" value="fr_FR">
-                                    <input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f4-p135-o1">
-                                    <input type="hidden" name="_wpnonce" value="0bc533e0c4">
+                                    <input type="hidden" name="type" value="contact">
                                 </div>
                                 <div class="une-ligne">
                                     <p><span class="wpcf7-form-control-wrap nom"><input type="text" name="nom" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Nom*"></span> </p>
@@ -93,13 +113,9 @@
                         <div id="rappel-immediat">
                             <div role="form" class="wpcf7" id="wpcf7-f45-p135-o2" lang="fr-FR" dir="ltr">
                                 <div class="screen-reader-response"></div>
-                                <form name="" action="/web/20150628025917/http://www.unitedtelecom.fr/contact/#wpcf7-f45-p135-o2" method="post" class="wpcf7-form cf7-style twenty-fifteen-pattern" novalidate="novalidate">
+                                <form name="" action="controller/mail.php" method="post" class="wpcf7-form cf7-style twenty-fifteen-pattern" novalidate="novalidate">
                                     <div style="display: none;">
-                                        <input type="hidden" name="_wpcf7" value="45">
-                                        <input type="hidden" name="_wpcf7_version" value="4.1.2">
-                                        <input type="hidden" name="_wpcf7_locale" value="fr_FR">
-                                        <input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f45-p135-o2">
-                                        <input type="hidden" name="_wpnonce" value="bb1204fe58">
+                                        <input type="hidden" name="type" value="rappel">
                                     </div>
                                     <p>Je souhaite être rappelé à ce numéro :     <span class="wpcf7-form-control-wrap tel-rappel"><input type="tel" name="tel-rappel" value="" size="10" class="wpcf7-form-control wpcf7-text wpcf7-tel wpcf7-validates-as-tel" aria-invalid="false"></span><input type="submit" value="OK" class="wpcf7-form-control wpcf7-submit tel-rappel"><span class="ajax-loader"></span></p>
                                     <div class="wpcf7-response-output wpcf7-display-none"></div>

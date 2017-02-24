@@ -4,7 +4,7 @@
             <div class="grid_3">
                 <section id="enhancedtextwidget-2" class="footer1 widget widget_text enhanced-text-widget">
                     <div class="textwidget widget-text">
-                        <img width="290px" src="./uploads/2015/03/logo-ut-2015-blanc.png"><br>
+                        <img width="290px" src="./uploads/2015/03/logo-ut-2015-blanc.png"/><br />
                         United Telecom met son expérience et son expertise au service des entreprise pour tous les projets en téléphonie d’entreprise, sécurisation des locaux et câblage réseau, avec des possibilités de financement attractives. United Telecom est une <b>SARL au capital de 100 000 €</b>
                     </div>
                 </section>
@@ -211,6 +211,7 @@
         max-width: 960px !important;
     }
 </style>
+<link rel="stylesheet" id="lshowcase-bxslider-style-css" href="./plugins/logos-showcase/bxslider/jquery.bxslider.css?ver=4.2.2" type="text/css" media="all">
 
 <script src="./js/main.js"></script>
 
@@ -225,3 +226,11 @@
 <script src="./js/retina.js"></script>
 <script src="./js/shortcodes.js"></script>
 <script src="./js/zozo.tabs.min.js"></script>
+
+<script type="text/javascript" src="./plugins/logos-showcase/bxslider/jquery.bxslider.min.js?ver=4.2.2"></script>
+<script type="text/javascript">
+        /* <![CDATA[ */
+        var lssliderparam = [{ "divid": ".lshowcase-wrap-carousel-0", "auto": "true", "pause": "4000", "autohover": "false", "ticker": "false", "tickerhover": "false", "useCSS": "true", "autocontrols": "false", "speed": "500", "slidewidth": "100", "slidemargin": "20", "infiniteloop": "true", "pager": "false", "controls": "true", "minslides": "1", "maxslides": "0", "moveslides": "1", "mode": "horizontal" }];
+        /* ]]> */
+    </script>
+<script type="text/javascript" src="./plugins/logos-showcase/js/carousel.js?ver=4.2.2"></script>

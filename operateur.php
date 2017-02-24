@@ -48,13 +48,9 @@
                     </ul>
                     <div role="form" class="wpcf7" id="wpcf7-f283-p92-o1" lang="fr-FR" dir="ltr">
                         <div class="screen-reader-response"></div>
-                        <form name="" action="/web/20150627064253/http://www.unitedtelecom.fr/nos-metiers/operateur-telephonique/#wpcf7-f283-p92-o1" method="post" class="wpcf7-form cf7-style facture" enctype="multipart/form-data" novalidate="novalidate">
+                        <form name="" action="controller/mail.php" method="post" class="wpcf7-form cf7-style facture" enctype="multipart/form-data" novalidate="novalidate">
                             <div style="display: none;">
-                                <input type="hidden" name="_wpcf7" value="283">
-                                <input type="hidden" name="_wpcf7_version" value="4.1.2">
-                                <input type="hidden" name="_wpcf7_locale" value="fr_FR">
-                                <input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f283-p92-o1">
-                                <input type="hidden" name="_wpnonce" value="3184963348">
+                                <input type="hidden" name="type" value="operateur">
                             </div>
                             <div><img width="150px" src="./uploads/2015/01/facture.png"></div>
                             <div id="texte">
@@ -62,7 +58,17 @@
                                 <p>A partir d’un audit de vos consommations actuelles, nous pouvons vous aider à réaliser d’importantes économies sur vos factures télécoms, sans aucun changement de votre installation. Soumettez-nous votre dernière facture telecom via le module de transfert ci-dessous, nous réaliserons pour vous une étude gratuite et sans engagement.</p>
                                 <p> <span class="wpcf7-form-control-wrap facture"><input type="file" name="facture" value="1" size="40" class="wpcf7-form-control wpcf7-file" aria-invalid="false"></span><input type="submit" value="Envoyer" class="wpcf7-form-control wpcf7-submit tel-rappel"><span class="ajax-loader"></span></p>
                             </div>
-                            <div class="wpcf7-response-output wpcf7-display-none"></div>
+                             <!--Message confirmation ou erreur formulaire-->
+                            <?php if(isset($_GET["retour"]) && $_GET["retour"] == 1){
+                                ?>
+                                    <p style="color:green;text-align:center;font-size: 1.3em;">Votre fichier nous à bien été transmis, nous vous contacterons dans les plus brefs delais.</p>
+                                <?php
+                            } ?>
+                            <?php if(isset($_GET["retour"]) && $_GET["retour"] == 0){
+                                ?>
+                                    <p style="color:red;text-align:center;font-size: 1.3em;">Suite à un probléme, votre message n'a pas pu etre envoyé.</p>
+                                <?php
+                            } ?>
                         </form>
                     </div>
                 </div>

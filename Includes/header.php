@@ -13,7 +13,7 @@
     <link type="text/css" rel="stylesheet" href="css/prettyPhoto.css">
     <link type="text/css" rel="stylesheet" href="css/widgets.css">
     <link type="text/css" rel="stylesheet" href="css/frontend.css?ver=2.2.5:14">
-	<link type="text/css" rel="stylesheet" href="css/styles-logos.css">
+	  <link type="text/css" rel="stylesheet" href="plugins/logos-showcase/styles.css">
 
     <link rel="shortcut icon" href="uploads/2015/01/favicon-ut.png" type="image/x-icon">
     <link rel="stylesheet" id="rs-plugin-settings-css" href="./plugins/revslider/rs-plugin/css/settings.css?rev=4.5.95&amp;ver=4.2.2" type="text/css" media="all">
@@ -50,7 +50,7 @@
     <script type="text/javascript" src="./plugins/contact-form-7-style/js/frontend.js?ver=2.2.5"></script>
     <script type="text/javascript" src="./plugins/revslider/rs-plugin/js/jquery.themepunch.tools.min.js?rev=4.5.95&amp;ver=4.2.2"></script>
     <script type="text/javascript" src="./plugins/revslider/rs-plugin/js/jquery.themepunch.revolution.min.js?rev=4.5.95&amp;ver=4.2.2"></script>
-
+    
 
     <!--
     <style type="text/css">
